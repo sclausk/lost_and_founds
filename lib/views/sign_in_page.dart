@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lost_and_founds/services/auth.dart';
 
 class SingInPage extends StatefulWidget {
   static const String routName = '/signin';
@@ -61,7 +62,16 @@ class _SingInPageState extends State<SingInPage> {
     );
   }
 
-  void _signIn() {}
+  Future _signIn() async {
+    final email = _emailController.text;
+    final password = _passwordController.text;
+    await Auth.signIn(email, password).then(_onResultSignIn);
+  }
+  
+  void _onResultSignIn(String userId){
+    print('SignIn: $userId');
+    //Navigator.of(context).pushReplacementNamed(HomePage.routeName);
+  }
 
   Widget _showSignInButton() {
     return RaisedButton(
@@ -70,7 +80,9 @@ class _SingInPageState extends State<SingInPage> {
     );
   }
 
-  void _signUp() {}
+  void _signUp() {
+    //Navigator.of(context).pushReplacementNamed(SignUpPage.routeName);
+  }
 
   Widget _showSignUpButton() {
     return  FlatButton(
