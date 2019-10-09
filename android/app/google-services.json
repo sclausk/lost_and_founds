@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "484584692451",
+    "firebase_url": "https://lostandfouds-sclausk.firebaseio.com",
+    "project_id": "lostandfouds-sclausk",
+    "storage_bucket": "lostandfouds-sclausk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:484584692451:android:bd974f9f322905cdb6c3d6",
+        "android_client_info": {
+          "package_name": "com.example.lost_and_founds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "484584692451-8b15cclg179f72ir5ta0st5d1vamlhu1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEoa8SbOobVyZ9S6LB9WVxosu437B8Eao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "484584692451-8b15cclg179f72ir5ta0st5d1vamlhu1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
